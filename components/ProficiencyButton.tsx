@@ -20,10 +20,10 @@ export const ProficiencyButton: React.FC<ProficiencyButtonProps> = ({ level, onC
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-3 rounded-xl border transition-all duration-200 flex flex-col items-center justify-center gap-1 group ${colors[level]}`}
+      className={`px-3 py-2 rounded-lg border transition-all duration-200 flex flex-col items-center justify-center gap-0.5 group ${colors[level]}`}
     >
-      <span className="text-xl font-bold">{level}</span>
-      <span className="text-xs font-medium opacity-80">{label}</span>
+      <span className="text-lg font-bold">{level}</span>
+      <span className="text-[9px] font-black uppercase opacity-70 tracking-tighter">{label}</span>
     </button>
   );
 };
